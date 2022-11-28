@@ -368,13 +368,45 @@
   <!-- Modal -->
   <div class="modal modal--preload is-closed" data-modal="feedback">
     <div class="modal__wrapper">
-      <div class="modal__content"></div>
-      <button class="modal__close-btn" type="button" aria-label="Закрыть попап." data-modal="close-modal"
-        data-close-modal>
-        <svg class="modal__close-btn-icon" width="26" height="26">
-          <use xlink:href="./img/sprite.svg#icon-close"></use>
-        </svg>
-      </button>
+      <div class="modal__content">
+        <h2>Доставка под заказ</h2>
+        <button class="modal__close-btn" type="button" aria-label="Закрыть попап." data-modal="close-modal"
+          data-close-modal>
+          <svg class="modal__close-btn-icon" width="26" height="26">
+            <use xlink:href="./img/sprite.svg#cross"></use>
+          </svg>
+        </button>
+        <form action="">
+          <label for="name">Ваше имя</label>
+          <input type="text" id="name" name="name" placeholder="Введите имя" required>
+          <label for="email">Ваш e-mail</label>
+          <input type="email" id="email" name="email" placeholder="Введите email" required>
+          <label for="textarea">Что нужно привезти</label>
+          <textarea id="textarea" placeholder="В свободной форме" name="comment" wrap="soft" required></textarea>
+
+          <label for="quantity">Количество:</label>
+          <span class="tooltip">
+            <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-label">
+              <svg class="tooltip__toggle-icon" width="4" height="13">
+                <use xlink:href="./img/sprite.svg#i"></use>
+              </svg>
+            </button>
+            <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём
+              сколько получится по требованиям
+              к провозу багажа.</span>
+          </span>
+          <div class="quantity__wrapper">
+            <button class="btn-minus" type="button">
+              <span class="visually-hidden">Уменьшить количество.</span>
+            </button>
+            <input type="number" id="quantity" name="quantity" value="1" step="1" min="1" max="10">
+            <button class="btn-plus" type="button">
+              <span class="visually-hidden">Увеличить количество.</span>
+            </button>
+          </div>
+          <button class="modal" type="submit">Отправить</button>
+        </form>
+      </div>
     </div>
   </div>
 
