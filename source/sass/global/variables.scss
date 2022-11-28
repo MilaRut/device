@@ -1,0 +1,47 @@
+// Colors
+// ---------------------------------
+
+// Default
+
+$color-default-black:               #000000;
+$color-default-white:               #ffffff;
+$color-transparent:                 rgba(255, 255, 255, 0);
+
+// Project palette
+// для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
+
+// basic
+
+$charcoal:                         #444444;
+$gainsboro:                        #dcdcdc;
+$whisper:                          #ebebeb;
+$white-smoke:                      #f0f0f0;
+
+// additional
+
+$sweet-corn:                       #ffe17f;
+$tangerine-yellow:                 #ffc700;
+$medium-orchid:                    #af4fff;
+
+// service
+
+$coral-red:                        #ff3d3d; // error
+$neon-carrot:                      #fd912e; // warning
+$islamic-green:                    #08af00; // sucsess
+
+// Viewports
+// ---------------------------------
+
+$vp-320:                            320px;
+$vp-375:                            375px;
+$vp-768:                            768px;
+$vp-1024:                           1024px;
+$vp-1280:                           1280px;
+$vp-1440:                           1440px;
+$vp-1920:                           1920px;
+
+// Retina
+// ---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;

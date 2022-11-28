@@ -1,0 +1,82 @@
+// .slider {
+//   display: flex;
+//   flex-direction: column;
+//   position: relative;
+//   margin-bottom: 50px;
+// }
+
+.slider__list {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slider__item {
+  display: none;
+}
+
+.slider__item.is-active {
+  display: block;
+}
+
+// .slider__image {
+//   margin: 0 auto;
+//   margin-bottom: 9px;
+// }
+
+// .slider__title {
+//   margin: 0;
+//   margin-bottom: 5px;
+// }
+
+// .slider__subtitle {
+//   font-weight: 700;
+//   text-align: center;
+//   letter-spacing: 0.02em;
+//   margin: 0;
+//   margin-bottom: 9px;
+// }
+
+// .slider__description {
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 1.43;
+//   text-align: center;
+//   margin: 0;
+//   margin-bottom: 20px;
+// }
+
+
+// .slider__button {
+//   z-index: 20;
+// }
+
+
+// .slider__navigation {
+//   overflow: hidden;
+//   position: absolute;
+//   z-index: 2;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+// }
+
+.slider__btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.slider__btn-next {
+  transform: scale(-1, 1);
+}
+
+// .slider__pagination-dot {
+//   width: 62px;
+//   height: 4px;
+//   margin-right: 8px;
+//   cursor: pointer;
+//   z-index: 20;
+// }
