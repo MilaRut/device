@@ -30,7 +30,7 @@
     <header class="header">
       <div class="container">
         <div class="header__logo">
-          <a href="index.html" class="header_logo-link">
+          <a href="index.html" class="header__logo-link">
             <svg class="header__logo-icon" width="145" height="36">
               <use xlink:href="./img/sprite.svg#device-logo"></use>
             </svg>
@@ -74,7 +74,7 @@
         <nav class="header__nav site-menu">
           <ul class="site-menu__list">
             <li class="site-menu__item">
-              <a href="№" class="site-menu__link">Каталог товаров</a>
+              <a href="#" class="site-menu__link">Каталог товаров</a>
             </li>
             <li class="site-menu__item">
               <a href="index.html#delivery" class="site-menu__link">Доставка</a>
@@ -93,31 +93,195 @@
     <main>
       <h1 class="visually-hidden">Каталог товаров интернет-магазина "Device".</h1>
 
+      <section class="heading">
+        <div class="container">
+          <h2>Моноподы для селфи</h2>
+          <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="index.html" class="breadcrumbs__link">Главная</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="#noscroll" class="breadcrumbs__link">Каталог товаров</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="#noscroll" class="breadcrumbs__link">Моноподы для селфи</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog">
+        <div class="container">
+          <div class="catalog__filter filter">
+            <h3>Фильтр:</h3>
+            <div class="filter__range">
+              <h4>Стоимость</h4>
+              <div class="filter__range-scale">
+                <div class="filter__range-bar">
+                  <button class="filter__range-toggle filter__range-toggle--min" type="button">
+                    <span>от 0</span>
+                  </button>
+                  <button class="filter__range-toggle filter__range-toggle--max" type="button">
+                    <span>до 5000</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="filter__ group">
+                <h4>Цвет</h4>
+                <input class="visually-hidden" type="checkbox" name="black" id="black" checked>
+                <label for="black">Черный</label>
+                <input class="visually-hidden" type="checkbox" name="white" id="white" checked>
+                <label for="white">Белый</label>
+                <input class="visually-hidden" type="checkbox" name="blue" id="blue">
+                <label for="blue">Синий</label>
+                <input class="visually-hidden" type="checkbox" name="red" id="red">
+                <label for="red">Красный</label>
+                <input class="visually-hidden" type="checkbox" name="pink" id="pink">
+                <label for="pink">Розовый</label>
+              </fieldset>
+              <fieldset class="filter__ group">
+                <h4>Bluetooth</h4>
+                <input class="visually-hidden" type="radio" name="yes" id="yes" checked>
+                <label for="yes">Есть</label>
+                <input class="visually-hidden" type="radio" name="no" id="no">
+                <label for="no">Нет</label>
+              </fieldset>
+              <button class="filter__btn btn" type="submit">Показать</button>
+            </form>
+          </div>
+
+          <div class="catalog__sorting sorting">
+            <h3>Сортировка</h3>
+            <select class="sorting__select">
+              <option value="hit" selected>Популярные</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="cheap">Сначала дешевые</option>
+            </select>
+            <svg class="sorting__toggle-icon" width="9" height="6">
+              <use xlink:href="./img/sprite.svg#arrow-down"></use>
+            </svg>
+            <div class="sorting__btn-wrapper">
+              <button class="sorting__btn sorting__btn--up">
+                <svg class="sorting__toggle-icon" width="11" height="10">
+                  <use xlink:href="./img/sprite.svg#arrow-up"></use>
+                </svg>
+              </button>
+              <button class="sorting__btn sorting__btn--down">
+                <svg class="sorting__toggle-icon" width="11" height="10">
+                  <use xlink:href="./img/sprite.svg#arrow-down2"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="catalog__cards cards">
+            <ul class="cards__list">
+              <li class="cards__item">
+                <a href="#noscroll" class="cards__link">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="./img/catalog/product-1.webp 1x, ./img/catalog/product-1@2x.webp 2x">
+                    <img src="./img/catalog/product-1.jpg" srcset="./img/catalog/product-1@2x.png" width="360"
+                      height="380" alt="" class="cards__img">
+                  </picture>
+                  <h4>Любительская селфи-палка</h4>
+                  <span>500 ₽</span>
+                </a>
+              </li>
+              <li class="cards__item">
+                <a href="#noscroll" class="cards__link">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="./img/catalog/product-2.webp 1x, ./img/catalog/product-2@2x.webp 2x">
+                    <img src="./img/catalog/product-2.jpg" srcset="./img/catalog/product-2@2x.png" width="360"
+                      height="380" alt="" class="cards__img">
+                  </picture>
+                  <h4>Профессиональная селфи-палка</h4>
+                  <span>1 500 ₽</span>
+                </a>
+              </li>
+              <li class="cards__item">
+                <a href="#noscroll" class="cards__link">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="./img/catalog/product-3.webp 1x, ./img/catalog/product-3@2x.webp 2x">
+                    <img src="./img/catalog/product-3.jpg" srcset="./img/catalog/product-3@2x.png" width="360"
+                      height="380" alt="" class="cards__img">
+                  </picture>
+                  <h4>Непотопляемая селфи-палка</h4>
+                  <span>2 500 ₽</span>
+                </a>
+              </li>
+              <li class="cards__item">
+                <a href="#noscroll" class="cards__link">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="./img/catalog/product-4.webp 1x, ./img/catalog/product-4@2x.webp 2x">
+                    <img src="./img/catalog/product-4.jpg" srcset="./img/catalog/product-4.jpg" width="360" height="380"
+                      alt="" class="cards__img">
+                  </picture>
+                  <h4>Селфи-палка «Следуй за мной»</h4>
+                  <span>1 500 ₽</span>
+                </a>
+              </li>
+            </ul>
+            <button class="cards__button">Загрузить ещё</button>
+          </div>
+
+          <div class="catalog__pagination pagination">
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <button class="pagination__btn pagination__btn--prev">Назад</button>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">3</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">...</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">15</a>
+              </li>
+              <li class="pagination__item">
+                <button class="pagination__btn pagination__btn--next">Вперёд</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
       <div class="container">
         <div class="footer__logo">
-          <a href="index.html" class="footer__logo-link">
-            <svg class="footer__logo-icon" width="145" height="36">
-              <use xlink:href="./img/sprite.svg#device-logo"></use>
-            </svg>
-          </a>
+          <svg class="footer__logo-icon" width="145" height="36">
+            <use xlink:href="./img/sprite.svg#device-logo"></use>
+          </svg>
         </div>
-        <address class="footer_adress">
+        <address class="footer__adress">
           <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           <a href="tel:88128121212">+7 (812) 812-12-12</a>
         </address>
         <nav class="footer__nav">
           <ul class="footer__nav-list">
             <li class="footer__nav-item">
-              <a href="index.html#delivery" class="footer__nav-link">Доставка</a>
+              <a href="#delivery" class="footer__nav-link">Доставка</a>
             </li>
             <li class="footer__nav-item">
-              <a href="index.html#services" class="footer__nav-link">Гарантия</a>
+              <a href="#services" class="footer__nav-link">Гарантия</a>
             </li>
             <li class="footer__nav-item">
-              <a href="index.html#contacts" class="footer__nav-link">Контакты</a>
+              <a href="#contacts" class="footer__nav-link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -140,10 +304,7 @@
             </li>
           </ul>
         </nav>
-
-
       </div>
-
     </footer>
   </div>
 
@@ -158,11 +319,12 @@
             <use xlink:href="./img/sprite.svg#cross"></use>
           </svg>
         </button>
-        <form action="">
+        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="get">
           <label for="name">Ваше имя</label>
           <input type="text" id="name" name="name" placeholder="Введите имя" required>
-          <label for="email">Ваш e-mail</label>
-          <input type="email" id="email" name="email" placeholder="Введите email" required>
+          <label for="modal-email">Ваш e-mail</label>
+          <input type="email" id="modal-email" name="email" placeholder="Введите email" required>
+          <span id="error-message">Забавный у вас адрес</span>
           <label for="textarea">Что нужно привезти</label>
           <textarea id="textarea" placeholder="В свободной форме" name="comment" wrap="soft" required></textarea>
 
@@ -173,11 +335,11 @@
                 <use xlink:href="./img/sprite.svg#i"></use>
               </svg>
             </button>
-            <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём
+            <span class="tooltip__text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём
               сколько получится по требованиям
               к провозу багажа.</span>
           </span>
-          <div class="quantity__wrapper">
+          <div class="quantity-wrapper">
             <button class="btn-minus" type="button">
               <span class="visually-hidden">Уменьшить количество.</span>
             </button>
@@ -186,7 +348,7 @@
               <span class="visually-hidden">Увеличить количество.</span>
             </button>
           </div>
-          <button class="modal" type="submit">Отправить</button>
+          <button class="modal__btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>
@@ -195,7 +357,5 @@
   <script src="/js/main.js"></script>
 
 </body>
-
-
 
 </html>

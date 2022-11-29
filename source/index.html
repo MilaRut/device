@@ -127,7 +127,7 @@
                   </dl>
                 </div>
               </li>
-              <li class="slider__item slider___item--second">
+              <li class="slider__item slider__item--second">
                 <div class="slider__content">
                   <picture>
                     <source type="image/webp" srcset="./img/slider/slider-2.webp 1x, ./img/slider/slider-2@2x.webp 2x">
@@ -232,7 +232,7 @@
       <section class="services" id="services">
         <h2 class="visually-hidden">Наши условия</h2>
         <div class="container">
-          <div class="tabs">
+          <div class="services__tabs tabs">
             <div class="tabs__nav">
               <button class="tabs__nav-btn btn" type="button" data-tab="#tab_1">Доставка</button>
               <button class="tabs__nav-btn btn" type="button" data-tab="#tab_2">Гарантия</button>
@@ -322,7 +322,7 @@
             <use xlink:href="./img/sprite.svg#device-logo"></use>
           </svg>
         </div>
-        <address class="footer_adress">
+        <address class="footer__adress">
           <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           <a href="tel:88128121212">+7 (812) 812-12-12</a>
         </address>
@@ -358,10 +358,7 @@
             </li>
           </ul>
         </nav>
-
-
       </div>
-
     </footer>
   </div>
 
@@ -376,11 +373,12 @@
             <use xlink:href="./img/sprite.svg#cross"></use>
           </svg>
         </button>
-        <form action="">
+        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="get">
           <label for="name">Ваше имя</label>
           <input type="text" id="name" name="name" placeholder="Введите имя" required>
-          <label for="email">Ваш e-mail</label>
-          <input type="email" id="email" name="email" placeholder="Введите email" required>
+          <label for="modal-email">Ваш e-mail</label>
+          <input type="email" id="modal-email" name="email" placeholder="Введите email" required>
+          <span id="error-message">Забавный у вас адрес</span>
           <label for="textarea">Что нужно привезти</label>
           <textarea id="textarea" placeholder="В свободной форме" name="comment" wrap="soft" required></textarea>
 
@@ -391,11 +389,11 @@
                 <use xlink:href="./img/sprite.svg#i"></use>
               </svg>
             </button>
-            <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём
+            <span class="tooltip__text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём
               сколько получится по требованиям
               к провозу багажа.</span>
           </span>
-          <div class="quantity__wrapper">
+          <div class="quantity-wrapper">
             <button class="btn-minus" type="button">
               <span class="visually-hidden">Уменьшить количество.</span>
             </button>
@@ -404,7 +402,7 @@
               <span class="visually-hidden">Увеличить количество.</span>
             </button>
           </div>
-          <button class="modal" type="submit">Отправить</button>
+          <button class="modal__btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>
@@ -413,7 +411,4 @@
   <script src="/js/main.js"></script>
 
 </body>
-
-
-
 </html>
